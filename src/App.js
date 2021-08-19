@@ -6,8 +6,12 @@ function App() {
   const [open, setOpen] = React.useState(false);
 
   const [loginData, setData] = useState({
-      phoneNumber: "",
-      password: "",
+    name: '',
+    phoneNumber: '',
+    emailId: '',
+    password: '',
+    confirmPassword: '',
+    tnc: false,
   })
 
   const handeleSubmit = () => {
@@ -15,44 +19,22 @@ function App() {
   }
   return (
     <div className="login">
-      <div className="container">
-        <div className="login-card">
-          <div className="row">
-            <div className="col-sm-0 col-md-6 card-visual">
-              <div className="visual-content">
-                <div className="visual-logo">
-                  <p className="logo">Foodie</p>
-                </div>
-                <hr className="mb-2 mt-0 d-inline-block mx-auto" style={{ width: "50px", backgroundColor: 'white' }} />
-                <div className="visual-text">
-                  <p className="visual-tagline mb-2">We are</p>
-                  <p className="visual-header mb-3">India's Most Trusted Food Delivery Service</p>
-                  <p className="visual-desc">
-                    1.5 Lakh+ people have already joined our network
-                    <br />
-                    Welcoming you to join the tribe
-                  </p>
-                </div>
-                <div className="footer">
-                  <p className="visual-question">
-                    Don't have an account?
-                    <br />
-                    <strong><a href="#">Create Account</a></strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 card-form">
+      <div className="login-card">
+        <div className="row">
+          <div className="col-sm-0 col-md-5 card-visual">
+
+          </div>
+          <div className="col-sm-12 col-md-6 card-form">
+            <div className="container">
               <div className="form-container">
-                <div className="form-logo text-center">
-                  <p className="logo-text">🔐 login</p>
+                <div className="form-logo mb-4">
+                  <p className="logo-text mb-0">Get's Started!</p>
+                  <small>Already have an account? <span className="link">Sign in</span></small>
                 </div>
                 <div className="form">
                   <form className="" noValidate onSubmit={handeleSubmit} >
                     <div className="text-center">
-                      <div className="col-xs-12 mx-3 text-start">
-                        <label className="label">Phone Number</label>
-                        <br />
+                      <div className="col-xs-12  text-start">
                         <input
                           className="input-field"
                           style={{ marginBlock: '10px' }}
@@ -62,34 +44,78 @@ function App() {
                           required
                           fullWidth
                           id="email"
-                          placeholder="Enter your number"
-                          value={loginData.phoneNumber}
-                          onChange={(e) => setData({ ...loginData, phoneNumber: e.target.value })}
+                          placeholder="Enter name"
+                          value={loginData.name}
+                          onChange={(e) => setData({ ...loginData, name: e.target.value })}
                         />
                       </div>
-                      <div className="col-xs-12 mx-3 text-start">
-                        <label className="label">Password</label>
-                        <br />
+                      <div className="col-xs-12  text-start">
                         <input
                           className="input-field"
                           name="password"
                           variant="outlined"
                           required
                           fullWidth
-                          placeholder="Enter your password"
+                          placeholder="EmailId"
+                          type="password"
+                          id="password"
+                          value={loginData.emailId}
+                          onChange={(e) => setData({ ...loginData, emailId: e.target.value })}
+                        />
+                      </div>
+                      <div className="col-xs-12  text-start">
+                        <input
+                          className="input-field"
+                          name="password"
+                          variant="outlined"
+                          required
+                          fullWidth
+                          placeholder="Phone Number"
+                          type="password"
+                          id="password"
+                          value={loginData.phoneNumber}
+                          onChange={(e) => setData({ ...loginData, phoneNumber: e.target.value })}
+                        />
+                      </div>
+                      <div className="col-xs-12  text-start">
+                        <input
+                          className="input-field"
+                          name="password"
+                          variant="outlined"
+                          required
+                          fullWidth
+                          placeholder="Password"
                           type="password"
                           id="password"
                           value={loginData.password}
                           onChange={(e) => setData({ ...loginData, password: e.target.value })}
                         />
                       </div>
+                      <div className="col-xs-12  text-start">
+                        <input
+                          className="input-field"
+                          name="password"
+                          variant="outlined"
+                          required
+                          fullWidth
+                          placeholder="Confirm Password"
+                          type="password"
+                          id="password"
+                          value={loginData.confirmPassword}
+                          onChange={(e) => setData({ ...loginData, confirmPassword: e.target.value })}
+                        />
+                      </div>
+                      <div className="col-xs-12  text-start">
+                        <input type="checkbox" onChange={(e) => setData({ ...loginData, tnc: e.target.checked })} /> I agree to the <span className="link">Terms and Conditions</span> and <span className="link">Privacy Policy</span>
+                      </div>
                       <button
                         type="submit"
                         variant="contained"
                         color="primary"
+                        fullWidth
                         className="submit"
                       >
-                        Log In 🔑
+                        Sign Up
                       </button>
                       <br />
                       <hr />
@@ -97,9 +123,12 @@ function App() {
                       <p className="line-text">or</p>
                       <br />
                       <div className="footer">
-                        <p className="visual-question text-center">
-                          Don't have an account? <strong><a href="#">Create Account</a></strong>
-                        </p>
+                        <div className="col-sm-12 col-md-5">
+                          <div className="option-btn">Sign Up with Google</div>
+                        </div>
+                        <div className="col-sm-12 col-md-5">
+                          <div className="option-btn">Sign Up with GitHub</div>
+                        </div>
                       </div>
                     </div>
                   </form>
