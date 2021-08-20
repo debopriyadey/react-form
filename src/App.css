@@ -12,33 +12,40 @@ hr {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+.link {
+    color: #0d6efd;
 }
 
 .login {
     background-color: black;
-    height: 100vh;
-    width: 100vw;
-    /* background-image: url('https://images.unsplash.com/photo-1599420186917-468a49a78a63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=200');
+    background-image: url('./bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; */
-    background-color: #fff;
+    background-position: center;
+    height: 100vh;
     overflow: hidden;
 }
 
 .login-card {
+    margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-block: 18px;
 }
 
 .card-visual {
     background-color: #f0e923;
-    background-image: url('https://images.unsplash.com/photo-1483519396903-1ef292f4974a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8eWVsbG93JTIwaWxsdXN0cmF0aW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-image: url('./pathshala.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 30px;
-    margin: 50px;
+    margin-left: 60px;
+    margin-block: 60px;
+    box-shadow: 0px 5px 10px;
 }
 
 .card-form {
@@ -56,6 +63,17 @@ a {
     color: rgb(20, 20, 20);
 }
 
+.form-logo {
+    padding: 2px;
+}
+
+.logo-text {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    color: #352FB9;
+}
+
 .input-field {
     border-radius: 5px;
     padding-block: 10px;
@@ -67,19 +85,53 @@ a {
     border: 2px solid gray;
 }
 
-.form-logo {
-    padding: 2px;
+.confirm-pass-error {
+    color: red;
+    font-weight: 500;
+    margin-top: -10px;
+    margin-left: 5px;
 }
 
-.logo-text {
-    font-size: xx-large;
-    font-weight: bolder;
-    font-family: 'Noto Sans JP', sans-serif;
+.text-checkbox {
+    display: flex;
+}
+
+.checkbox-field {
+    border-radius: 5px;
+    margin-block: 5px;  
+    border: 2px solid gray; 
+    height: 18px;
+    width: 18px;
+}
+
+.checkbox-label {
+    font-weight: 500;
+}
+
+
+.submit {
+    font-weight: 600;
 }
 
 .footer {
     display: flex;
     justify-content: space-around;
+}
+
+.option-btn {
+    border: 2px rgb(245, 245, 245) solid;
+    box-shadow: 2px 3px 3px 0px grey;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.option-btn:hover {
+    box-shadow: 1px 1px 1px 0px grey;
+}
+
+.option-text {
+    font-weight: 500;
+    color: grey;
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap'); */
@@ -92,7 +144,7 @@ a {
 }
 
 .submit {
-    background-color: #0d6efd;
+    background-color: #6F5CE4;
     border: none;
     width: 100%;
     border-radius: 15px;
@@ -113,6 +165,7 @@ a {
     margin: 0 auto;
     font-weight: bold;
     margin-top: -31px;
+    color: grey;
 }
 
 @media screen and (max-width: 1200px) {
@@ -143,6 +196,11 @@ a {
 
     .form-container {
         margin-inline: 0px;
+    }
+
+    .footer {
+        display: block;
+        justify-content: space-around;
     }
 }
 
