@@ -16,7 +16,7 @@ a {
 }
 
 .link {
-    color: #0d6efd;
+    color: #3d2ba9;
 }
 
 .login {
@@ -38,7 +38,7 @@ a {
 
 .card-visual {
     background-color: #f0e923;
-    background-image: url('./pathshala.jpg');
+    background-image: url('./pathshala.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -110,7 +110,8 @@ a {
 
 
 .submit {
-    font-weight: 600;
+    font-weight: 500;
+    color: #fff;
 }
 
 .footer {
@@ -130,8 +131,8 @@ a {
 }
 
 .option-text {
-    font-weight: 500;
-    color: grey;
+    font-weight: 400;
+    color: rgb(19, 18, 18);
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap'); */
