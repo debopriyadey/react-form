@@ -21,14 +21,14 @@ function App() {
             <div className="col-sm-0 col-md-6 card-visual">
               <div className="visual-content">
                 <div className="visual-logo">
-                  <p className="logo">Foodie</p>
+                  <p className="logo">Fooodie</p>
                 </div>
                 <hr className="mb-2 mt-0 d-inline-block mx-auto" style={{ width: "50px", backgroundColor: 'white' }} />
                 <div className="visual-text">
                   <p className="visual-tagline mb-2">We are</p>
-                  <p className="visual-header mb-3">India's Most Trusted Food Delivery Service</p>
+                  <p className="visual-header mb-3">India's Most Swift Food Delivery Service</p>
                   <p className="visual-desc">
-                    1.5 Lakh+ people have already joined our network
+                    8.5 Lakh+ people have already trusted our delivery service
                     <br />
                     Welcoming you to join the tribe
                   </p>
@@ -37,7 +37,7 @@ function App() {
                   <p className="visual-question">
                     Don't have an account?
                     <br />
-                    <strong><a href="#">Create Account</a></strong>
+                    <strong><a href="#" style={{textDecoration: 'none'}}>Create Account</a></strong>
                   </p>
                 </div>
               </div>
@@ -98,7 +98,7 @@ function App() {
                       <br />
                       <div className="footer">
                         <p className="visual-question text-center">
-                          Don't have an account? <strong><a href="#">Create Account</a></strong>
+                          Don't have an account? <strong><a href="#" style={{textDecoration: 'none'}}>Create Account</a></strong>
                         </p>
                       </div>
                     </div>
