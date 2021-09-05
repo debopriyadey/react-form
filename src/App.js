@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 
+import pathshala from './pathshala.png'
+
 function App() {
 
   const [open, setOpen] = useState(false);
@@ -38,7 +40,8 @@ function App() {
   return (
     <div className="login">
       <div className="row login-card">
-        <div className="col-sm-12 col-md-5 card-visual">
+        <div className="col-sm-12 col-md-5">
+          <img src={pathshala} alt="" height='630' width='630' className="card-visual" />
         </div>
         <div className="col-sm-12 col-md-6 card-form">
           <div className="container">
